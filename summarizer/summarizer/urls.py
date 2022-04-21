@@ -15,10 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+from videosummary import views
 from videosummary.views import *
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
     path('', Landing_page, name='landing'),
+    path("simple_function", views.simple_function),
+    path('pdf',views.getpdf),
+    path('output',views.output),
 ]

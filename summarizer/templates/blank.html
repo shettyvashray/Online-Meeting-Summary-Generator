@@ -8,9 +8,12 @@
 </head>
 <body>
     <h1>LETS NAACHO</h1>
-    <form method="POST">
-        {% csrf_token %}
+    <form action="/simple_function">
         <button type="submit" name="run_script">Run script</button>
+    </form>
+
+    <form action="/pdf">
+        <button type="submit" name="download">Download</button>
     </form>
 </body>
 </html>
